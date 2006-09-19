@@ -3,10 +3,11 @@ Type: Package
 Title: Affymetrix Spike-in Langmuir Isotherm Data Analysis Tool 
 Version: 1.1.0
 Date: 2006-05-05
-Author: Enrico Carlon <enrico.arlon@iemn.univ-lille1.fr>, Thomas Heim, 
-        Delphine Baillon, Paul Leclercq <paulleclercq@hotmail.com>, Sarah Ternisien
-Maintainer: Enrico Carlon <enrico.carlon@polytech.lille.fr>
-Description: Data validation tests based on langmuir adsorption theory,
+Author: Delphine Baillon, Paul Leclercq <paulleclercq@hotmail.com>, Sarah Ternisien, 
+        Thomas Heim, Enrico Carlon <enrico.carlon@polytech-lille.fr>
+Maintainer: Enrico Carlon <enrico.carlon@polytech-lille.fr>
+Description: SpikeLI  is a package that performs the analysis of the Affymetrix spike-in data using the Langmuir Isotherm. The aim of this package is to show the advantages of a physical-chemistry based analysis of the Affymetrix microarray data compared to the traditional methods. The spike-in (or Latin square) data for the HGU95 and HGU133 chipsets have been downloaded from the Affymetrix web site. The model used in the spikeLI package is described in details in E. Carlon and T. Heim, Physica A 362, 433 (2006).
+Depends: utils
 License: Free Software Licence, GPL
 BiocViews: Microarray, QualityControl
-Packaged: Thu Jul 13 14:22:12 2006; root
+Packaged: Thu Sep 14 19:54:52 2006; enrico
