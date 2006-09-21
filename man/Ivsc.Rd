@@ -30,11 +30,9 @@ Ivsc(probe_set, probe = "NULL", outfile = "NULL")
 
 Maintainer: Enrico Carlon <enrico.carlon@iemn.univ-lille1.fr>
 }
-\note{ eliminate output!
-      If I-I0<0 set a small positive value instead (as 0.00001)
 \section{Warning }{ Some probes have an irregular behavior and the non-linear square fit
      does not converge.}
-}
+
 \seealso{
   \code{\link{collapse}}, \code{\link{IvsDG}}, \code{\link{hgu}}, \code{\link{SPIKE_IN}}, \code{\link{SPIKE_INA}}, \code{\link{SPIKE_INB}}, \code{\link{SPIKE_INH}}
 }

@@ -22,7 +22,7 @@ Ivsc(SPIKE_IN[3])
 
 ## you can then plot the value of the Intensity of the probe with the predicted value of the hybridisation
 ## according to the Delta G, value
-IvsDG(SPIKE_IN[5])
+IvsDG(SPIKE_IN[5],64)
 
 ## The collapse function will finally plot all the values of the probe set according to 
 ## the langmuir absorption theory

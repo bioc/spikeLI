@@ -36,7 +36,7 @@ License: \tab GNU Public License\cr
 \author{
   Delphine Baillon, Paul Leclercq, Sarah Ternisien, Thomas Heim and Enrico Carlon
 
-Maintainer: Enrico Carlon <enrico.carlon@iemn.univ-lille1.fr>
+Maintainer: Enrico Carlon <enrico.carlon@polytech-lille.fr>
 }
 \seealso{
   \code{\link{collapse}}, \code{\link{Ivsc}}, \code{\link{IvsDG}}, \code{\link{hgu}}, \code{\link{SPIKE_IN}}, \code{\link{SPIKE_INA}}, \code{\link{SPIKE_INB}}, \code{\link{SPIKE_INH}}
