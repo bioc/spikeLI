@@ -10,4 +10,3 @@ Description: SpikeLI  is a package that performs the analysis of the Affymetrix 
 Depends: utils
 License: Free Software Licence, GPL
 BiocViews: Microarray, QualityControl
-Packaged: Thu Sep 14 19:54:52 2006; enrico
