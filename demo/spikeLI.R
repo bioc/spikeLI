@@ -14,8 +14,6 @@ for (k in conc133[2:length(conc133)] )
 }
 
 
-# cat("\n\n\n                  -------------------------       \n\n                   Wellcome to the SpikeLI package demo                      \n\n\n\n\n\n                  -------------------------       \n\n             We have extracted the data on some genes from an affymetrix MicroArray     \n        you can display the names of the genes for the artificial          \n       human or bacterial genes by entering the name of the vector (i.e: SPIKE_IN)");                        
-
 spike_in <-function()
 {
 	cat("\n\n\n\n\n\n\t\t-------------------------------------")
