@@ -99,31 +99,42 @@ IvsDG<- function(probe_set,conc,outfile="NULL"){
 ## Create the graphic window
         par(mfrow=c(1,2))
 
+### PLOT ON THE LEFT GRAPH
         plot(c(0,nbProbes),Y,type="n",log="y",main=probe_set,las=1,xlab="probes",ylab="I-I0");
-        lines(seq(1,nbProbes,1),difIpm,col="blue",lwd=2.3)
-        points(seq(1,nbProbes,1),difIpm,col="blue",pch=19)
-        lines(seq(1,nbProbes,1),difImm,col="red",lwd=2.3)
-        points(seq(1,nbProbes,1),difImm,col="red",pch=19)
+########### [1:nbProbes] added by Enrico on 3/4/2009 ######################################
+        lines(seq(1,nbProbes,1),difIpm[1:nbProbes],col="blue",lwd=2.3)
+        points(seq(1,nbProbes,1),difIpm[1:nbProbes],col="blue",pch=19)
+        lines(seq(1,nbProbes,1),difImm[1:nbProbes],col="red",lwd=2.3)
+        points(seq(1,nbProbes,1),difImm[1:nbProbes],col="red",pch=19)
+############################################################################################
         text(2,15000,"PM",col="blue",font=2,adj=0,cex=1.1);
         text(6,15000,"MM",col="red",font=2,adj=0,cex=1.1);
+
+### PLOT ON THE RIGHT GRAPH
         plot(X,Y,log="y",type="n",main=probe_set,las=1,xlab="Delta G + RT log(alpha)",ylab="I-I0");
         text(2,200,paste("c=",conc*1e12," pM"),font=2);
-##	text(2,200,paste("c=",conc*1e12," pM"),font=2,cex=1.8);
-        text(gPM,difIpm,txt,col="blue",font=2);
-##        text(gPM,difIpm,txt,col="blue",cex=1.1,font=2);
-        text(gMM,difImm,txt,col="red",font=2);
-##        text(gMM,difImm,txt,col="red",cex=1.1,font=2);
+########### [1:nbProbes] added by Enrico on 3/4/2009 ######################################
+        text(gPM[1:nbProbes],difIpm[1:nbProbes],txt[1:nbProbes],col="blue",font=2);
+########### [1:nbProbes] added by Enrico on 3/4/2009 ######################################
+        text(gMM[1:nbProbes],difImm[1:nbProbes],txt[1:nbProbes],col="red",font=2);
         lines(dg,Langdg)
         lines(dg,Langdgp4,lty=4,col="green")
         lines(dg,Langdgd4,lty=4,col="green")
 
 ## Fit for the concentration
-        gtot<-c(gPM,gMM[gMM>0])
-        difItot<-c(difIpm,difImm[gMM>0])
+########### [1:nbProbes] added by Enrico on 3/4/2009 ######################################
+        gtot<-c(gPM[1:nbProbes],(gMM[1:nbProbes])[gMM[1:nbProbes]>0])
+        difItot<-c(difIpm[1:nbProbes],(difImm[1:nbProbes])[gMM[1:nbProbes]>0])
+#  	print(gtot)
+#  	print(difItot)
         conctot<-1e12*difItot*exp(-beta*gtot)/(A-difItot)
         difItot<-difItot[conctot>0]
         conctot<-conctot[conctot>0]	
-##        print(conctot)
+########### added by Enrico on 3/4/2009 ######################################
+#        print(conctot)
+	if(length(conctot)==0) conctot=1.e-10
+##############################################################################
+
 
 ##afficher le nom du probe_set et la legende
         text(24.5,15000,paste("c=",conc*1e12," pM"),font=2,cex=1.1,adj=0);

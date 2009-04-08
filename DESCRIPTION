@@ -1,8 +1,8 @@
 Package: spikeLI
 Type: Package
 Title: Affymetrix Spike-in Langmuir Isotherm Data Analysis Tool 
-Version: 2.1
-Date: 2009-02-11
+Version: 2.2
+Date: 2009-04-03
 Author: Delphine Baillon, Paul Leclercq <paulleclercq@hotmail.com>, Sarah Ternisien, 
         Thomas Heim, Enrico Carlon <enrico.carlon@fys.kuleuven.be>
 Maintainer: Enrico Carlon <enrico.carlon@fys.kuleuven.be>
@@ -10,3 +10,4 @@ Description: SpikeLI  is a package that performs the analysis of the Affymetrix 
 Depends: utils
 License: GPL
 biocViews: Microarray, QualityControl
+Packaged: Fri Apr  3 10:42:10 2009; enrico
