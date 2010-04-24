@@ -1,0 +1,6 @@
+importFrom(graphics, lines, par, plot, points, text)
+importFrom(grDevices, dev.off, postscript)
+importFrom(stats, fitted.values, median, nls)
+importFrom(utils, data)
+
+export(collapse, Ivsc, IvsDG)
