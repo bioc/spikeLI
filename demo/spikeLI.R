@@ -36,7 +36,7 @@ spike_inh<-function()
 
 spike_intro<-function()
 {
-	cat("\n\n\n\n\n\n\-----------------------------------------------------------------------------") 
+	cat("\n\n\n\n\n\n-----------------------------------------------------------------------------") 
 	cat("\nSpikeLI: functions")
 	cat("\n-----------------------------------------------------------------------------") 
 	cat("\nThe SpikeLI package uses three functions based on the Lamgmuir isotherm: Ivsc, IvsDG, collapse") 
@@ -61,7 +61,7 @@ spike_inIc<-function()
 
 spike_inIDG<-function()
 {
-	cat("\n\n\n\n\n\n\-----------------------------------------------------------------------------") 
+	cat("\n\n\n\n\n\n-----------------------------------------------------------------------------") 
 	cat("\nIvsDG: Intensity vs. free energy")
 	cat("\n-----------------------------------------------------------------------------") 
 	cat("\nThis plots measured intensities at a given spike-in concentration as a function of the hybridization free energies") 
@@ -74,7 +74,7 @@ spike_inIDG<-function()
 
 spike_incoll<-function()
 {
-	cat("\n\n\n\n\n\n\-----------------------------------------------------------------------------") 
+	cat("\n\n\n\n\n\n-----------------------------------------------------------------------------") 
 	cat("\ncollapse")
 	cat("\n-----------------------------------------------------------------------------") 
 	cat("\nIt allows to plot on a same graph all spike-in data at different concentrations of a given probe set") 
